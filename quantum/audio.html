@@ -1,0 +1,47 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>QuantumHitech.com</title>
+    </head>
+    <body>
+        <h4>with Autoplay</h4>
+        <audio src="Doraemon.mp3" autoplay></audio>
+        
+        <br>
+        <h4>with Controls</h4>
+        <audio  src="Doraemon.mp3" controls></audio>
+        
+        <br>
+        <h4>with Controls, start and end of clip</h4>
+        <audio  src="Doraemon.mp3#t=,62" controls></audio>
+        <br>
+        <audio src="Doraemon.mp3#t=10,11" controls></audio>
+        <br>
+        <audio src="Doraemon.mp3#t=0,80" controls></audio>
+
+        <br>
+        <h4>with Control and Loop</h4>
+        <audio src="Doraemon.mp3" loop controls></audio>
+        
+        <br>
+        <h4>with preload value auto</h4>
+        <audio src="Doraemon.mp3" preload="auto" controls></audio><!--with value auto it download all of information-->
+        <br>
+        <h4>with preload value metadata</h4>
+        <audio src="Doraemon.mp3" preload="metadata" controls></audio><!--with value metadata it download in between some information-->
+        <br>
+        <h4>with preload value none</h4>
+        <audio src="Doraemon.mp3" preload="none" controls></audio><!--with value none download no information-->
+        
+        <br>
+        <h4>with audio fallback and multiple sources</h4>
+        <audio controls>
+            <source src="Doraemon.ogg" type="audio/ogg">
+            <source src="Doraemon.mp3" type="audio/mp3">
+            <source src="Doraemon.wav" type="audio/wav">
+           please<a href="Doraemon.mp3" download>download</a>the audio file.
+        </audio>
+
+    </body>
+</html>
