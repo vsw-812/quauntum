@@ -1,2 +1,2 @@
-# quauntum
+# quantum
 Quantum Hitech
